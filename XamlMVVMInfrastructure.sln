@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamlMVVMInfrastructure.Test", "XamlMVVMInfrastructure.Test\XamlMVVMInfrastructure.Test.csproj", "{1F0A8979-0908-4F1F-A27B-5600168B1873}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamlMVVMInfrastructure", "XamlMVVMInfrastructure\XamlMVVMInfrastructure.csproj", "{3084F132-9DFB-4939-896E-24C946A95050}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{1F0A8979-0908-4F1F-A27B-5600168B1873}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F0A8979-0908-4F1F-A27B-5600168B1873}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F0A8979-0908-4F1F-A27B-5600168B1873}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3084F132-9DFB-4939-896E-24C946A95050}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3084F132-9DFB-4939-896E-24C946A95050}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3084F132-9DFB-4939-896E-24C946A95050}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3084F132-9DFB-4939-896E-24C946A95050}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1F0A8979-0908-4F1F-A27B-5600168B1873}</ProjectGuid>
+    <ProjectGuid>{3084F132-9DFB-4939-896E-24C946A95050}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>XamlMVVMInfrastructure.Test</RootNamespace>
-    <AssemblyName>XamlMVVMInfrastructure.Test</AssemblyName>
+    <RootNamespace>XamlMVVMInfrastructure</RootNamespace>
+    <AssemblyName>XamlMVVMInfrastructure</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommandExtension.cs" />
+    <Compile Include="NotifyObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
