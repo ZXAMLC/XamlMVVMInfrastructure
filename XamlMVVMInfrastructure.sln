@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamlMVVMInfrastructure.Test", "XamlMVVMInfrastructure.Test\XamlMVVMInfrastructure.Test.csproj", "{1F0A8979-0908-4F1F-A27B-5600168B1873}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F0A8979-0908-4F1F-A27B-5600168B1873}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F0A8979-0908-4F1F-A27B-5600168B1873}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F0A8979-0908-4F1F-A27B-5600168B1873}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F0A8979-0908-4F1F-A27B-5600168B1873}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CC6A6C80-2ED6-4C7E-A5DA-2C2FA77A5CF6}
+	EndGlobalSection
+EndGlobal
