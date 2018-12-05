@@ -1,15 +1,18 @@
-﻿using System;
+﻿
+using System;
 
 using System.Windows;
 using System.Windows.Input;
 
+using Infrastructure;
+
 namespace XamlMVVMInfrastructure.WpfLib.Commands
 {
-    public class ElementKeyEventMerge : ElementEventMerge
+    public class FEKeyEventParam : UIElementRoutedEventParam
     {
         private readonly KeyEventArgs _e;
 
-        public ElementKeyEventMerge(FrameworkElement sender, KeyEventArgs e, Object commandPara)
+        public FEKeyEventParam(FrameworkElement sender, KeyEventArgs e, Object commandPara)
             : base(sender, commandPara)
         {
             _e = e;

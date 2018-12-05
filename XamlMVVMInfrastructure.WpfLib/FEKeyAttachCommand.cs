@@ -3,7 +3,7 @@ using System.Windows.Input;
 
 namespace XamlMVVMInfrastructure.WpfLib.Commands
 {
-    public class ElementKeyBehavior
+    public class FEKeyAttachCommand
     {
         #region CommandParameter
 
@@ -18,7 +18,8 @@ namespace XamlMVVMInfrastructure.WpfLib.Commands
         }
 
         public static readonly DependencyProperty CommandParameterProperty =
-    DependencyProperty.RegisterAttached("CommandParameter", typeof(object), typeof(ElementKeyBehavior), new UIPropertyMetadata(CommandPrarmeterChanged));
+    DependencyProperty.RegisterAttached("CommandParameter", typeof(object), typeof(FEKeyAttachCommand)
+        , new UIPropertyMetadata(CommandPrarmeterChanged));
 
         private static void CommandPrarmeterChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
@@ -36,7 +37,7 @@ namespace XamlMVVMInfrastructure.WpfLib.Commands
 
         public static readonly DependencyProperty KeyDownCommandProperty =
             DependencyProperty.RegisterAttached("KeyDownCommand",
-                typeof(ICommand), typeof(ElementKeyBehavior)
+                typeof(ICommand), typeof(FEKeyAttachCommand)
                 , new FrameworkPropertyMetadata(KeyDownCommandChanged));
 
         private static void KeyDownCommandChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
@@ -61,7 +62,7 @@ namespace XamlMVVMInfrastructure.WpfLib.Commands
 
             var command = GetKeyDownCommand(element);
 
-            var ekem = new ElementKeyEventMerge(element, e, GetCommandParameter(element));
+            var ekem = new FEKeyEventParam(element, e, GetCommandParameter(element));
 
             command.Execute(ekem);
         }
@@ -82,7 +83,7 @@ namespace XamlMVVMInfrastructure.WpfLib.Commands
 
         public static readonly DependencyProperty PreviewKeyDownCommandProperty =
             DependencyProperty.RegisterAttached("PreviewKeyDownCommand",
-                typeof(ICommand), typeof(ElementKeyBehavior)
+                typeof(ICommand), typeof(FEKeyAttachCommand)
                 , new FrameworkPropertyMetadata(PreviewKeyDownCommandChanged));
 
         private static void PreviewKeyDownCommandChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
@@ -107,7 +108,7 @@ namespace XamlMVVMInfrastructure.WpfLib.Commands
 
             var command = GetPreviewKeyDownCommand(element);
 
-            var ekem = new ElementKeyEventMerge(element, e, GetCommandParameter(element));
+            var ekem = new FEKeyEventParam(element, e, GetCommandParameter(element));
 
             command.Execute(ekem);
         }
@@ -128,7 +129,7 @@ namespace XamlMVVMInfrastructure.WpfLib.Commands
 
         public static readonly DependencyProperty KeyUpCommandProperty =
     DependencyProperty.RegisterAttached("KeyUpCommand",
-        typeof(ICommand), typeof(ElementKeyBehavior)
+        typeof(ICommand), typeof(FEKeyAttachCommand)
         , new FrameworkPropertyMetadata(KeyUpCommandChanged));
 
         private static void KeyUpCommandChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
@@ -153,7 +154,7 @@ namespace XamlMVVMInfrastructure.WpfLib.Commands
 
             var command = GetKeyUpCommand(element);
 
-            var ekem = new ElementKeyEventMerge(element, e, GetCommandParameter(element));
+            var ekem = new FEKeyEventParam(element, e, GetCommandParameter(element));
 
             command.Execute(ekem);
         }
@@ -174,7 +175,7 @@ namespace XamlMVVMInfrastructure.WpfLib.Commands
 
         public static readonly DependencyProperty PreviewKeyUpCommandProperty =
     DependencyProperty.RegisterAttached("PreviewKeyUpCommand",
-        typeof(ICommand), typeof(ElementKeyBehavior)
+        typeof(ICommand), typeof(FEKeyAttachCommand)
         , new FrameworkPropertyMetadata(PreviewKeyUpCommandChanged));
 
         private static void PreviewKeyUpCommandChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
@@ -199,7 +200,7 @@ namespace XamlMVVMInfrastructure.WpfLib.Commands
 
             var command = GetPreviewKeyUpCommand(element);
 
-            var ekem = new ElementKeyEventMerge(element, e, GetCommandParameter(element));
+            var ekem = new FEKeyEventParam(element, e, GetCommandParameter(element));
 
             command.Execute(ekem);
         }
