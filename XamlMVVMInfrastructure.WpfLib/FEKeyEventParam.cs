@@ -4,8 +4,6 @@ using System;
 using System.Windows;
 using System.Windows.Input;
 
-using Infrastructure;
-
 namespace XamlMVVMInfrastructure.WpfLib.Commands
 {
     public class FEKeyEventParam : UIElementRoutedEventParam

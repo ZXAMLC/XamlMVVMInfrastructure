@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Infrastructure
+namespace XamlMVVMInfrastructure.WpfLib
 {
     public abstract class UIElementRoutedEventParam
     {

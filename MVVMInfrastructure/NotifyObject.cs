@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 
-namespace Infrastructure
+namespace MVVMInfrastructure
 {
     public abstract class NotifyObject : INotifyPropertyChanged
     {

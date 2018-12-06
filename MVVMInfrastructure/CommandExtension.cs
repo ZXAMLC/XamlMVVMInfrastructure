@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 using System.Windows.Input;
 
-namespace Infrastructure
+namespace MVVMInfrastructure
 {
     public abstract class NVCommandBase
     {
