@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="FEKeyAttachCommand.cs" />
     <Compile Include="FEKeyEventParam.cs" />
+    <Compile Include="FELifeAttachCommand.cs" />
     <Compile Include="KeyAttachCommand.cs" />
     <Compile Include="KeyMapping.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
